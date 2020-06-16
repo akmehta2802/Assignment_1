@@ -9,32 +9,102 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief It contains all the header files
  *
- * <Add Extended Description Here>
+ * <Add It has code outline, function prototypes and documentation
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Akhil Mehta>
+ * @date <June 16, 2020 >
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/* print_statistics() */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief A function that prints the statistics of an array including minimum, maximum, mean, and median.
  *
- * <Add Extended Description Here>
+ * This function takes an array of 40 characters. It will print the maximum value, minimum value, mean and median.
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @param array array of 40 charcaters
+ * 
+ * @return maximum value
+ * @return minimum value
+ * @return mean
+ * @return median    	
  */
+ 
+ /* print_array() */ 
 
+/**
+ * @brief A function that prints the array 
+ *
+ * This function takes an array of 40 characters. It will print the array to the screen.
+ *
+ * @param array array of 40 charcaters
+ * 
+ * @return array    	
+ */
+ 
+/* find_median() */ 
 
+/**
+ * @brief A function that returns the median value 
+ *
+ * This function takes an array of 40 characters. It will print the median value to the screen.
+ *
+ * @param array array of 40 charcaters
+ * 
+ * @return median    	
+ */   
+ 
+ /* find_mean() */ 
+
+/**
+ * @brief A function that returns the mean value 
+ *
+ * This function takes an array of 40 characters. It will print the mean value to the screen.
+ *
+ * @param array array of 40 charcaters
+ * 
+ * @return mean    	
+ */   
+ 
+ /* find_maximum() */ 
+
+/**
+ * @brief A function that returns the maximum value 
+ *
+ * This function takes an array of 40 characters. It will print the maximum value to the screen.
+ *
+ * @param array array of 40 charcaters
+ * 
+ * @return maximum    	
+ */   
+ 
+ /* find_minimum() */ 
+
+/**
+ * @brief A function that returns the minimum value 
+ *
+ * This function takes an array of 40 characters. It will print the minimum value to the screen.
+ *
+ * @param array array of 40 charcaters
+ * 
+ * @return minimum    	
+ */   
+ 
+ /* sort_array() */ 
+
+/**
+ * @brief A function that sorts the array from largest to smallest
+ *
+ * This function takes an array of 40 characters. It sorts the array from largest to smallest. (The zeroth Element should be the largest value, and the last element (n-1) should be the smallest value. )
+ *
+ * @param array array of 40 charcaters
+ * 
+ * @return sorted array    	
+ */   
 #endif /* __STATS_H__ */

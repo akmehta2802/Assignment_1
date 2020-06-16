@@ -9,17 +9,15 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief It contains all the function definiton.
  *
- * <Add Extended Description Here>
+ * <Add It has function definiton with empty function body
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Akhil Mehta>
+ * @date <June 16, 2020 >
  *
  */
-
-
 
 #include <stdio.h>
 #include "stats.h"
@@ -27,6 +25,26 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
+int print_statistics(){
+}
+
+int print_array(){
+}
+
+int find_median(){
+}
+
+int find_mean(){
+}
+
+int find_maximum(){
+}
+
+int find_minimum(){
+}
+
+int sort array(){
+}
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -39,5 +57,7 @@ void main() {
   /* Statistics and Printing Functions Go Here */
 
 }
+
+
 
 /* Add other Implementation File Code Here */
