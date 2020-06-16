@@ -25,26 +25,16 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-int print_statistics(){
+
+
+int print_statistics(unsigned char test[]){
+	find_median(test);
+	find_mean(test);
+	find_maximum(test);
+	find_minimum(test);
+	return 0;
 }
 
-int print_array(){
-}
-
-int find_median(){
-}
-
-int find_mean(){
-}
-
-int find_maximum(){
-}
-
-int find_minimum(){
-}
-
-int sort array(){
-}
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -55,9 +45,65 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
+  sort_array(test);
+  print_statistics(test);
+  print_array(test);
 }
 
 
 
 /* Add other Implementation File Code Here */
+int print_array(unsigned char test[]){
+	for (int i = 0; i < SIZE; ++i)
+	{
+		printf("%d ", test[i]); /* code */
+	}
+	printf("\n");
+	return 0;
+}
+
+int find_median(unsigned char test[]){
+
+	int n = SIZE/2;
+	int m = n-1;
+	printf("%f\n", ((float)test[m]+(float)test[n])/2 );
+	return 0;
+}
+
+int find_mean(unsigned char test[]){
+	float sum = 0;
+	for (int i = 0; i < SIZE; ++i)
+	{
+		/* code */
+		sum+=test[i];
+	}
+	printf("%f\n",sum/SIZE );
+	return 0;
+}
+
+int find_maximum(unsigned char test[]){
+	printf("%d\n",test[0] );
+	return 0;
+}
+
+int find_minimum(unsigned char test[]){
+	printf("%d\n",test[SIZE-1] );
+	return 0;
+}
+
+int sort_array(unsigned char test[]){
+
+	for (int i = 0; i < SIZE; ++i) 
+        {
+            for (int j = i + 1; j < SIZE; ++j) 
+            {
+                if (test[i] < test[j]) 
+                {
+                    int a = test[i];
+                    test[i] = test[j];
+                    test[j] = a;
+                }
+            }
+        }
+    return 0;
+}

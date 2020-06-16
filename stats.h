@@ -35,6 +35,7 @@
  * @return mean
  * @return median    	
  */
+int print_statistics(unsigned char test[]);
  
  /* print_array() */ 
 
@@ -47,6 +48,7 @@
  * 
  * @return array    	
  */
+int print_array(unsigned char test[]);
  
 /* find_median() */ 
 
@@ -59,7 +61,7 @@
  * 
  * @return median    	
  */   
- 
+ int find_median(unsigned char test[]);
  /* find_mean() */ 
 
 /**
@@ -71,7 +73,7 @@
  * 
  * @return mean    	
  */   
- 
+ int find_mean(unsigned char test[]);
  /* find_maximum() */ 
 
 /**
@@ -83,6 +85,7 @@
  * 
  * @return maximum    	
  */   
+ int find_maximum(unsigned char test[]);
  
  /* find_minimum() */ 
 
@@ -95,6 +98,7 @@
  * 
  * @return minimum    	
  */   
+ int find_minimum(unsigned char test[]);
  
  /* sort_array() */ 
 
@@ -107,4 +111,5 @@
  * 
  * @return sorted array    	
  */   
+ int sort_array(unsigned char test[]);
 #endif /* __STATS_H__ */
